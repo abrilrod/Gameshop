@@ -1,0 +1,296 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* HEADER */
+
+.top {
+    background-color: #222222;
+    display: flex;
+    height: 6.25rem;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    padding: 0 3.125rem;
+    margin: 0 auto;
+}
+
+.top img {
+    width: auto;
+    height: 2.8rem;
+    padding: 10px;
+}
+
+.top nav {
+    text-align: right;
+    padding: 10px;
+    display: flex;
+    position: relative;
+}
+
+.top li {
+    color: #F3F3F3;
+    list-style: none;
+    display: inline-block;
+    padding: 10px 7px;
+}
+
+nav ul::before {
+    content: "";
+    background-color: #Ffffff;
+    position: absolute;
+    bottom: 20px;
+    width: 0%;
+    height: 2px;
+    transition: all 0.2s;
+}
+
+nav ul:hover::before {
+    width: 90%;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 200,
+  'opsz' 48;
+  color: #D01418;
+  padding: 17px 7px;
+  font-size: 1.5rem;
+}
+
+/* MAIN */
+
+main {
+    background-color: #F3F3F3;
+}
+
+main h2 {
+    font-size: 1.875rem;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+li>a, .slider>a {
+    color: #Ffffff;
+    text-decoration: none;
+    margin: 0px 10px;
+    font-weight: 700;
+}
+
+    /* slider */
+
+.slider {
+    background-image: url('../Ejercicio\ Gameshop/img/img 1.png');
+    text-align: center;
+    width: auto;
+    height: 32rem;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+
+.slider h1 {
+    color: #F3F3F3;
+    font-size: 2.5rem;
+    padding: 1.5rem;
+    font-weight: 700;
+}
+
+.slider span {
+    color: #D01418;
+}
+
+.slider a {
+    background-color: #D01418;
+    border-radius: 0.313rem;
+    color: #F3F3F3;
+    padding: 1rem 3.75rem;
+    font-weight: 500;
+    font-size: 1.563rem;
+}
+
+.slider a:hover {
+    background-color: #c29e9e;
+    transition: 0.4s;
+}
+
+    /*productos destacados */
+
+.productos-destacados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productos-destacados>div {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #ffffff;
+    width: 265px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card > img {
+    width: 129px;
+    height: 163px;
+    margin: 30px 68px;
+}
+
+.card-text {
+    padding: 20px;
+}
+
+.contado {
+    font-size: 1.25rem;
+}
+
+.cuotas {
+    font-size: 0.8125rem;
+}
+
+.envio {
+    color: #619D00;
+    font-size: 0.625rem;
+}
+
+hr {
+    color: #f3f3f3;
+    opacity: 0.5;
+}
+
+.productos-destacados h2 {
+    padding-top: 2.25rem;
+    padding-bottom: 3rem;
+}
+
+    /* productos estrellas */
+
+.productos-estrellas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+}
+
+.productos-estrellas h2 {
+    padding-top: 2.7rem;
+    padding-bottom: 1rem;
+}
+
+.productos-estrellas-container {
+    display: flex;
+}
+
+.productos-estrellas-container a {
+    color: #f3f3f3;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+.productos-estrellas-container a > h3 {
+    font-weight: 400;
+    font-size: 1.563rem;
+}
+
+.sillas {
+    background-image: url('../Ejercicio\ Gameshop/img/banner 1.png');
+}
+
+.computadoras {
+    background-image: url('../Ejercicio\ Gameshop/img/banner 1 (1).png');
+}
+
+.computadoras:hover, .sillas:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.computadoras, .sillas {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 22.563rem;
+    height: 8.438rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0px 50px 6px;
+    border-radius: 0.313rem;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #222222;
+    height: 13.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .bottom {
+    background-color: #C4C4C4;
+    height: 1.563rem;
+}
+
+footer img {
+    height: 2.5rem;
+    width: 11.438rem;
+    margin-left: 2rem;
+}
+
+footer .redes-sociales {
+    margin-right: 2rem;
+}
+
+.redes-sociales h4 {
+    font-size: 1.563rem;
+    font-weight: 400;
+    color: #F3F3F3;
+}
+
+.redes-sociales .social {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.bi-bi-facebook, .bi-bi-instagram, .bi-bi-twitter {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.bi-bi-twitter {
+    color: #14AED0;
+    width: 2rem;
+    height: 2rem;
+}
+
+.bi-bi-facebook {
+    color: #1476D0;
+    width: 2rem;
+    height: 2rem;
+} 
+
+.bi-bi-instagram {
+    color: #CE0CFF;
+    width: 2rem;
+    height: 2rem;
+}
